@@ -9,7 +9,7 @@ const session = require("express-session");
 
 const PORT = process.env.PORT || 3000;
 const app = express();
-const db = "mongodb://localhost:27017/userDB";
+const db = process.env.DATABASE_URI || "mongodb://localhost:27017/userDB";
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
