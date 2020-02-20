@@ -10,6 +10,10 @@
           <form action="/users/register" method="POST">
             <div class="form-group">
               <label for="email">Email</label>
+              <p>
+                username must be in form of "example@xyz.com" (username should
+                be in in email form.)
+              </p>
               <input type="email" class="form-control" name="username" />
             </div>
             <div class="form-group">
@@ -17,6 +21,10 @@
               <input type="password" class="form-control" name="password" />
             </div>
             <button type="submit" class="btn btn-dark">Register</button>
+            <p>
+              Dont use ogrigianl username , so that me (even the admin) dont
+              know who you are
+            </p>
           </form>
         </div>
       </div>
